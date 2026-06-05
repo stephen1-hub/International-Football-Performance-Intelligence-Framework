@@ -13,7 +13,7 @@ high-scoring matches.
 
 # Load data
 df = pd.read_csv(
-    "data/international_football_dashboard.csv"
+    "international_football_dashboard.csv"
 )
 
 # KPI Cards

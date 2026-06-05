@@ -1,6 +1,11 @@
 import streamlit as st
 import pandas as pd
 
+import streamlit as st
+
+if st.button("Go to Test Page"):
+    st.switch_page("pages/Test.py")
+
 st.title("🌍 International Football Performance Intelligence Framework")
 
 st.markdown("""

@@ -50,6 +50,7 @@ def load_data():
         vulnerability_df,
         phase_df
     )
+attack_df, finishing_df, defense_df, profiles_df, vulnerability_df, phase_df = load_data()
 
 # =====================================================
 # VALIDATION

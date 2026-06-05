@@ -16,6 +16,8 @@ if os.path.exists("pages"):
 else:
     st.error("Pages folder NOT found")
 
+st.sidebar.success("Sidebar is working")
+
 st.set_page_config(
     page_title="International Football Performance Intelligence Framework",
     page_icon="⚽",

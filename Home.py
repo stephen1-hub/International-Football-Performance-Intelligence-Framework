@@ -26,6 +26,8 @@ st.set_page_config(
 import streamlit as st
 
 st.write("Streamlit version:", st.__version__)
+import os
+st.sidebar.write(os.listdir("pages"))
 
 st.title("🌍 International Football Performance Intelligence Framework")
 

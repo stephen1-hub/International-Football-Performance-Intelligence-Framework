@@ -1,41 +1,77 @@
-# 2026 International Friendly Performance Intelligence Framework 
+# ⚽ 2026 International Friendly Performance Intelligence Framework
 
-## Project Overview
+## Overview
 
-Football analysis often focuses on wins, losses, and goals scored. However, these metrics do not always explain why teams perform the way they do.
+As teams prepare for the 2026 FIFA World Cup, international friendly matches provide valuable insights into tactical identity, attacking efficiency, defensive stability, and overall team readiness.
 
-This project develops a Football Performance Intelligence Framework using international friendly match data from 2026. The objective is to identify attacking strengths, defensive foundations, finishing efficiency, team profiles, and match vulnerabilities across international teams.
+This project develops a Football Performance Intelligence Framework to evaluate national team performance beyond traditional metrics such as wins, losses, and goals scored.
 
-The analysis answers five key business questions that coaches, analysts, federations, broadcasters, and scouting departments may find valuable.
+Using 2026 international friendly match data, the framework answers five key performance questions through custom football intelligence metrics and interactive visualizations.
 
----
-
-## Business Questions
-
-### 1. Which teams have the strongest attacks?
-
-An Attack Intelligence Index (AII) was developed using:
-
-* Goals Scored per Match
-* Expected Goals (xG)
-* Possession
-* Shots on Target
-
-#### Key Finding
-
-Germany emerged as the strongest attacking team in the dataset, while Bulgaria and Brazil ranked among the most effective attacking sides.
+An interactive Streamlit dashboard was also developed to enable exploration of team performance across multiple dimensions.
 
 ---
 
-### 2. Which teams are overperforming or underperforming their expected goals?
+## Project Objectives
 
-A Finishing Efficiency metric was developed:
+The analysis seeks to answer:
 
-Finishing Efficiency = Goals Scored per Match ÷ Expected Goals (xG)
+1. Which teams have the strongest attacking structures?
+2. Which teams are overperforming or underperforming expected goals (xG)?
+3. Which teams possess the strongest defensive foundations?
+4. Which teams profile as genuine contenders ahead of the World Cup?
+5. During which match phases are teams most vulnerable defensively?
 
-#### Key Findings
+---
 
-**Most Clinical Teams**
+## Dashboard Features
+
+The Streamlit dashboard includes:
+
+* ⚔️ Attack Intelligence Rankings
+* 🎯 Finishing Efficiency Analysis
+* 🛡️ Defensive DNA Rankings
+* 📊 Team Profile Segmentation
+* ⏱️ Match Vulnerability Analysis
+* 📈 Interactive Visualizations
+* 📋 Downloadable Rankings and Tables
+
+---
+
+## Business Question 1: Which Teams Have the Strongest Attacks?
+
+### Attack Intelligence Index (AII)
+
+A custom attacking metric was developed using:
+
+* Goals Scored per Match (40%)
+* Shots on Target (25%)
+* Expected Goals (xG) (20%)
+* Possession (15%)
+
+### Key Findings
+
+Top attacking teams included:
+
+1. Germany
+2. Bulgaria
+3. Brazil
+4. Republic of Ireland
+5. Morocco
+
+These teams consistently generated high-quality chances while maintaining strong attacking efficiency.
+
+---
+
+## Business Question 2: Which Teams Are Overperforming or Underperforming xG?
+
+### Finishing Efficiency
+
+Finishing Efficiency was calculated as:
+
+Goals Scored per Match ÷ Expected Goals (xG)
+
+### Most Clinical Teams
 
 * Ivory Coast
 * Austria
@@ -43,7 +79,7 @@ Finishing Efficiency = Goals Scored per Match ÷ Expected Goals (xG)
 * Brazil
 * Bulgaria
 
-**Most Underperforming Teams**
+### Most Underperforming Teams
 
 * South Africa
 * Japan
@@ -51,22 +87,22 @@ Finishing Efficiency = Goals Scored per Match ÷ Expected Goals (xG)
 * Greece
 * Spain
 
-These findings help distinguish sustainable attacking performance from short-term finishing variance.
+This analysis helps distinguish sustainable attacking quality from short-term finishing variance.
 
 ---
 
-### 3. Which teams have the strongest defensive foundations?
+## Business Question 3: Which Teams Have the Strongest Defensive Foundations?
 
-A Defensive DNA Index (DDI) was developed using:
+### Defensive DNA Index (DDI)
 
-* Goals Conceded per Match
-* Expected Goals Against (xGA)
-* Clean Sheet Percentage
-* Minutes per Goal Conceded
+The Defensive DNA Index was developed using:
 
-#### Key Findings
+* Goals Conceded per Match (40%)
+* Expected Goals Against (xGA) (30%)
+* Clean Sheet Percentage (20%)
+* Minutes per Goal Conceded (10%)
 
-Top defensive teams included:
+### Top Defensive Teams
 
 * Australia
 * Iceland
@@ -74,18 +110,15 @@ Top defensive teams included:
 * Colombia
 * Ecuador
 
+These teams demonstrated strong defensive resilience across multiple defensive indicators.
+
 ---
 
-### 4. Which teams are balanced contenders, attack specialists, or defense specialists?
+## Business Question 4: Which Teams Are Genuine Contenders?
 
-Teams were classified into four categories:
+Teams were segmented into four categories:
 
-* Contenders
-* Attack Specialists
-* Defense Specialists
-* Balanced Teams
-
-#### Contenders
+### 🏆 Contenders
 
 * Germany
 * Mexico
@@ -94,40 +127,55 @@ Teams were classified into four categories:
 * Canada
 * Morocco
 
-#### Attack Specialists
+### ⚔️ Attack Specialists
 
 * Brazil
 * France
 * Switzerland
 * Senegal
 
-#### Defense Specialists
+### 🛡️ Defense Specialists
 
 * Japan
 * South Africa
 * Norway
 * Netherlands
 
+### ⚖️ Balanced Teams
+
+Teams demonstrating moderate attacking and defensive performance without clear specialization.
+
 ---
 
-### 5. When are teams most vulnerable to conceding goals?
+## Business Question 5: When Are Teams Most Vulnerable?
 
-Goal concessions were analyzed across match periods.
+Goal concessions were analysed across match periods.
 
-#### Key Findings
+### Findings
 
-The most dangerous period for teams was:
+| Match Period | Goals Conceded |
+| ------------ | -------------- |
+| 0–10         | 16             |
+| 11–20        | 25             |
+| 21–30        | 19             |
+| 31–40        | 18             |
+| 41–50        | 36             |
+| 51–60        | 37             |
+| 61–70        | 39             |
+| 71–80        | 24             |
+| 81–90        | 41             |
 
-81–90 minutes → 41 goals conceded
+### Key Insight
 
-Teams conceded more than twice as many goals after halftime compared to the opening 40 minutes.
+The 81–90 minute period emerged as the most vulnerable phase, accounting for the highest number of goals conceded.
 
 This highlights the importance of:
 
 * Match management
-* Tactical adjustments
-* Fitness
-* Concentration
+* Tactical substitutions
+* Squad depth
+* Physical conditioning
+* Concentration in closing stages
 
 ---
 
@@ -135,27 +183,21 @@ This highlights the importance of:
 
 ### Attack Intelligence Index
 
-40% Goals per Match
+AII =
 
-25% Shots on Target
-
-20% Expected Goals (xG)
-
-15% Possession
-
----
+* 40% Goals per Match
+* 25% Shots on Target
+* 20% Expected Goals (xG)
+* 15% Possession
 
 ### Defensive DNA Index
 
-40% Goals Conceded per Match
+DDI =
 
-30% Expected Goals Against (xGA)
-
-20% Clean Sheet Percentage
-
-10% Minutes per Goal Conceded
-
----
+* 40% Goals Conceded per Match
+* 30% Expected Goals Against (xGA)
+* 20% Clean Sheet Percentage
+* 10% Minutes per Goal Conceded
 
 ### Finishing Efficiency
 
@@ -163,36 +205,38 @@ Goals per Match ÷ Expected Goals (xG)
 
 ---
 
-## Tools Used
+## Tools & Technologies
 
 * Python
 * Pandas
 * NumPy
 * Scikit-Learn
-* Matplotlib
-* Seaborn
-* Jupyter Notebook
+* Plotly
 * Streamlit
+* Jupyter Notebook
+* GitHub
 
 ---
 
-## Key Skills Demonstrated
+## Skills Demonstrated
 
-* Sports Analytics
-* Feature Engineering
+* Football Analytics
+* Sports Intelligence
 * KPI Development
-* Business Question Framing
-* Performance Benchmarking
+* Feature Engineering
+* Data Cleaning
+* Exploratory Data Analysis
 * Data Visualization
-* Football Intelligence Reporting
+* Dashboard Development
+* Performance Benchmarking
+* Business Problem Solving
 
 ---
 
-## Conclusion
+## Key Takeaways
 
-The Football Performance Intelligence Framework provides a structured approach to evaluating international teams beyond traditional results.
+The Football Performance Intelligence Framework demonstrates that team strength extends beyond match results.
 
-The analysis reveals that team success is influenced by a combination of attacking quality, defensive stability, finishing efficiency, and match management.
+By integrating attacking quality, defensive resilience, finishing efficiency, and vulnerability analysis, the framework provides a more complete assessment of international team performance ahead of the 2026 FIFA World Cup.
 
-By integrating these dimensions into a single analytical framework, stakeholders can gain deeper insights into team performance and identify strengths, weaknesses, and potential future trends.
-
+**Note:** Rankings reflect international friendly matches played in 2026 up to the date of analysis. Additional friendlies may influence team profiles and rankings before the FIFA World Cup begins.

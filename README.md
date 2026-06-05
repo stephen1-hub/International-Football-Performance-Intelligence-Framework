@@ -36,6 +36,7 @@ The Streamlit dashboard includes:
 * 📈 Interactive Visualizations
 * 📋 Downloadable Rankings and Tables
 
+# Live demo: https://international-football-performance-intelligence-framework-xfxj.streamlit.app/
 ---
 
 ## Business Question 1: Which Teams Have the Strongest Attacks?

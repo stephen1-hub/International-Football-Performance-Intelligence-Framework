@@ -8,6 +8,10 @@ This project develops a multi-dimensional Football Intelligence Framework that e
 
 An interactive Streamlit dashboard was developed to enable users to explore team performance, rankings, and football identities.
 
+## Live Dashboard
+](https://international-football-performance-intelligence-framework-cdpw.streamlit.app/)
+
+
 ## Business Questions
 
 1. Which teams are most prepared for the 2026 FIFA World Cup?
@@ -117,6 +121,3 @@ into a single team intelligence score.
 * Dashboard Development
 * Performance Benchmarking
 * Business Problem Solving
-
-## Live Dashboard
-](https://international-football-performance-intelligence-framework-cdpw.streamlit.app/)

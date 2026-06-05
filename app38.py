@@ -18,12 +18,29 @@ st.set_page_config(
 
 def load_data():
 
-    attack_df = pd.read_csv("attack_intelligence_rankings.csv")
-    finishing_df = pd.read_csv("finishing_efficiency.csv")
-    defense_df = pd.read_csv("defensive_dna_rankings.csv")
-    profiles_df = pd.read_csv("team_profiles.csv")
-    vulnerability_df = pd.read_csv("team_vulnerability.csv")
-    phase_df = pd.read_csv("match_phase_analysis.csv")
+    attack_df = pd.read_csv(
+        "data/attack_intelligence_rankings.csv"
+    )
+
+    finishing_df = pd.read_csv(
+        "data/finishing_efficiency.csv"
+    )
+
+    defense_df = pd.read_csv(
+        "data/defensive_dna_rankings.csv"
+    )
+
+    profiles_df = pd.read_csv(
+        "data/team_profiles.csv"
+    )
+
+    vulnerability_df = pd.read_csv(
+        "data/team_vulnerability.csv"
+    )
+
+    phase_df = pd.read_csv(
+        "data/match_phase_analysis.csv"
+    )
 
     return (
         attack_df,
@@ -33,8 +50,6 @@ def load_data():
         vulnerability_df,
         phase_df
     )
-
-attack_df, finishing_df, defense_df, profiles_df, vulnerability_df, phase_df = load_data()
 
 # =====================================================
 # VALIDATION

@@ -1,8 +1,17 @@
 football-performance-intelligence/
 │
 ├── app38.py
-├──international-international-friendlies-teams-2026-to-2026-stats.csv
-├── requirements.txt
+│
+├── data/
+│   ├── attack_intelligence_rankings.csv
+│   ├── finishing_efficiency.csv
+│   ├── defensive_dna_rankings.csv
+│   ├── team_profiles.csv
+│   ├── team_vulnerability.csv
+│   └── match_phase_analysis.csv
+│
+├── assets/
+│   └── banner.png
+│
 ├── README.md
-└── assets/
-    └── banner.png
+└── requirements.txt

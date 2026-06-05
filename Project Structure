@@ -1,0 +1,73 @@
+international-football-performance-intelligence/
+│
+├── README.md
+├── requirements.txt
+├── .gitignore
+│
+├── data/
+│   ├── raw/
+│   │   └── international-international-friendlies-teams-2026-to-2026-stats.csv
+│   │
+│   └── processed/
+│       ├── attack_intelligence.csv
+│       ├── defensive_dna.csv
+│       ├── finishing_efficiency.csv
+│       ├── team_profiles.csv
+│       └── match_vulnerability.csv
+│
+├── notebooks/
+│   ├── 01_data_understanding.ipynb
+│   ├── 02_attack_intelligence_index.ipynb
+│   ├── 03_finishing_efficiency_analysis.ipynb
+│   ├── 04_defensive_dna_index.ipynb
+│   ├── 05_team_profile_segmentation.ipynb
+│   └── 06_match_vulnerability_analysis.ipynb
+│
+├── src/
+│   ├── data_processing.py
+│   ├── attack_intelligence.py
+│   ├── finishing_efficiency.py
+│   ├── defensive_dna.py
+│   ├── team_profiles.py
+│   └── match_vulnerability.py
+│
+├── visuals/
+│   ├── attack_intelligence/
+│   │   ├── top20_attack_rankings.png
+│   │   ├── attack_scatter.png
+│   │   └── attack_radar.png
+│   │
+│   ├── finishing_efficiency/
+│   │   ├── overperformers.png
+│   │   └── underperformers.png
+│   │
+│   ├── defensive_dna/
+│   │   ├── top20_defensive_rankings.png
+│   │   └── defensive_scatter.png
+│   │
+│   ├── team_profiles/
+│   │   └── attack_vs_defense_quadrant.png
+│   │
+│   └── match_vulnerability/
+│       ├── goals_by_match_period.png
+│       └── late_game_vulnerability.png
+│
+├── dashboard/
+│   ├── app.py
+│   ├── pages/
+│   │   ├── 1_Attack_Intelligence.py
+│   │   ├── 2_Finishing_Efficiency.py
+│   │   ├── 3_Defensive_DNA.py
+│   │   ├── 4_Team_Profiles.py
+│   │   └── 5_Match_Vulnerability.py
+│   │
+│   └── assets/
+│       ├── banner.png
+│       └── logo.png
+│
+├── reports/
+│   ├── executive_summary.pdf
+│   └── project_report.pdf
+│
+└── presentation/
+    └── football_performance_intelligence_framework.pptx

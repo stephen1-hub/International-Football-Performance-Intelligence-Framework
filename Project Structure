@@ -1,17 +1,13 @@
-football-performance-intelligence/
+football-performance-intelligence
 │
 ├── app38.py
+├── requirements.txt
+├── README.md
 │
-├── data/
+├── data
 │   ├── attack_intelligence_rankings.csv
 │   ├── finishing_efficiency.csv
 │   ├── defensive_dna_rankings.csv
 │   ├── team_profiles.csv
 │   ├── team_vulnerability.csv
 │   └── match_phase_analysis.csv
-│
-├── assets/
-│   └── banner.png
-│
-├── README.md
-└── requirements.txt

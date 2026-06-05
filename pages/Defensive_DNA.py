@@ -83,7 +83,7 @@ fig2 = px.scatter(
     df,
     x="goals_against_per_match",
     y="clean_sheet_rate",
-    size="goal_difference",
+    size="clean_sheet_rate",
     color="defensive_strength_score",
     hover_name="team",
     title="Goals Against vs Clean Sheet Rate"

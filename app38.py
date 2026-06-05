@@ -50,7 +50,16 @@ def load_data():
         vulnerability_df,
         phase_df
     )
+try:
+    attack_df, finishing_df, defense_df, profiles_df, vulnerability_df, phase_df = load_data()
 
+    st.write("Loaded successfully")
+    st.write("Profiles columns:", profiles_df.columns.tolist())
+
+except Exception as e:
+    st.error(f"Data loading failed: {e}")
+    st.stop()
+    
 # =====================================================
 # VALIDATION
 # =====================================================

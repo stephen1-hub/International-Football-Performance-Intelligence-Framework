@@ -1,10 +1,23 @@
-football-performance-intelligence/
+international-football-performance-intelligence-framework/
 │
-├── app38.py
 ├── data/
-│   ├── attack_intelligence_rankings.csv
-│   ├── finishing_efficiency.csv
-│   ├── defensive_dna_rankings.csv
-│   ├── team_profiles.csv
-│   ├── team_vulnerability.csv
-│   └── match_phase_analysis.csv
+│   └── international_football_dashboard.csv
+│
+├── assets/
+│   └── logo.png
+│
+├── pages/
+│   ├── 1_World_Cup_Readiness.py
+│   ├── 2_Attacking_Efficiency.py
+│   ├── 3_Defensive_DNA.py
+│   ├── 4_Entertainment_Index.py
+│   ├── 5_High_Intensity_Football.py
+│   ├── 6_Football_Intelligence_Rankings.py
+│   └── 7_Team_Intelligence_Hub.py
+│
+├── .streamlit/
+│   └── config.toml
+│
+├── Home.py
+├── requirements.txt
+└── README.md

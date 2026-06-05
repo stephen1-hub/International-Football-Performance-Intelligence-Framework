@@ -15,7 +15,15 @@ st.set_page_config(
 # =====================================================
 # LOAD DATA
 # =====================================================
+import os
 
+st.write("Current directory:", os.getcwd())
+st.write("Root contents:", os.listdir())
+
+if os.path.exists("data"):
+    st.write("Data folder contents:", os.listdir("data"))
+else:
+    st.error("Data folder not found")
 def load_data():
 
     attack_df = pd.read_csv(
@@ -51,16 +59,6 @@ def load_data():
         phase_df
     )
 attack_df, finishing_df, defense_df, profiles_df, vulnerability_df, phase_df = load_data()
-
-import os
-
-st.write("Current directory:", os.getcwd())
-st.write("Root contents:", os.listdir())
-
-if os.path.exists("data"):
-    st.write("Data folder contents:", os.listdir("data"))
-else:
-    st.error("Data folder not found")
 
 # =====================================================
 # VALIDATION

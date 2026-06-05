@@ -1,34 +1,6 @@
 import streamlit as st
 import pandas as pd
 
-import os
-import streamlit as st
-
-st.write("Current directory:")
-st.write(os.getcwd())
-
-st.write("Files in root:")
-st.write(os.listdir("."))
-
-if os.path.exists("pages"):
-    st.success("Pages folder found")
-    st.write(os.listdir("pages"))
-else:
-    st.error("Pages folder NOT found")
-
-st.sidebar.success("Sidebar is working")
-
-st.set_page_config(
-    page_title="International Football Performance Intelligence Framework",
-    page_icon="⚽",
-    layout="wide"
-)
-import streamlit as st
-
-st.write("Streamlit version:", st.__version__)
-import os
-st.sidebar.write(os.listdir("pages"))
-
 st.title("🌍 International Football Performance Intelligence Framework")
 
 st.markdown("""

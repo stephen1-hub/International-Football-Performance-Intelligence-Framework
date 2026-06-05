@@ -23,6 +23,9 @@ st.set_page_config(
     page_icon="⚽",
     layout="wide"
 )
+import streamlit as st
+
+st.write("Streamlit version:", st.__version__)
 
 st.title("🌍 International Football Performance Intelligence Framework")
 

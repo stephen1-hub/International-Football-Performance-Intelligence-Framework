@@ -119,5 +119,4 @@ into a single team intelligence score.
 * Business Problem Solving
 
 ## Live Dashboard
-
-[Add Streamlit Link Here]
+](https://international-football-performance-intelligence-framework-cdpw.streamlit.app/)
